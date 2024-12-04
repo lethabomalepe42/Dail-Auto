@@ -1,0 +1,1230 @@
+/* Global Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #FFFFFF; /* White Background */
+    margin: 0;
+    padding: 0;
+    color: #000000; /* Black Text */
+  }
+  
+  /* Header Styles */
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #E2330A; /* Red Background */
+  }
+  
+  .header-left {
+    display: flex;
+    align-items: center;
+  }
+  
+  .logo {
+    width: 50px;
+    height: auto;
+    margin-right: 15px;
+  }
+  
+  .company-name {
+    color: #FFFFFF; /* White Text */
+    font-size: 24px;
+    margin: 0;
+  }
+  
+  .quick-links {
+    position: sticky; /* Makes the links sticky */
+    top: 0; /* Sticks to the top of the viewport */
+    z-index: 1000; /* Ensures the links are above other content */
+    background-color: #E2330A; /* Red background */
+    padding: 10px 20px; /* Adds spacing */
+    list-style: none; /* Removes bullets */
+    display: flex; /* Aligns links in a row */
+    gap: 20px; /* Adds spacing between links */
+  }
+  
+  .quick-links a {
+    color: #FFC440; /* Yellow text */
+    text-decoration: none; /* Removes underline */
+    font-size: 16px; /* Adjusts font size */
+  }
+  
+  .quick-links a:hover {
+    text-decoration: underline; /* Adds underline on hover */
+  }
+  
+  .header {
+    overflow: visible; /* Ensure sticky links are not clipped */
+  }
+  
+  
+  
+  /* Home Section Styling */
+  .home {
+    width: 100%;
+    height: 400px; /* Adjust the height as needed */
+    overflow: hidden;
+    position: relative;
+    background-color: transparent; /* No background color */
+  }
+  
+  /* Slider Container */
+  .slider {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+  /* Slide Settings */
+  .slide {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: 0; /* Initially hide the slides */
+    animation: fadeInOut 4s infinite; /* Each image fades in and out every 4 seconds */
+  }
+  
+  /* Ensure images fill the container */
+  .slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures images maintain their aspect ratio */
+    display: block;
+  }
+  
+  /* Keyframes for fading in and out the slides */
+  @keyframes fadeInOut {
+    0%, 100% {
+      opacity: 0; /* Invisible at the start and end */
+    }
+    50% {
+      opacity: 1; /* Fully visible in the middle of the cycle */
+    }
+  }
+  
+  /* Timing for the two slides to alternate */
+  .slider .slide:nth-child(1) {
+    animation-delay: 0s; /* First image starts at the beginning */
+  }
+  
+  .slider .slide:nth-child(2) {
+    animation-delay: 2s; /* Second image starts after 2 seconds */
+  }
+  
+  .services-intro p {
+    font-size: 18px;
+    color: #000000; /* Black Text */
+  }
+  .slogan-section {
+    text-align: center;
+    padding: 20px;
+    background-color: #000000; /* Black background to contrast */
+  }
+  
+  .slogan-section h2 {
+    font-size: 2.5rem;
+    color: #E2330A; /* Red color for the main slogan */
+    margin-bottom: 10px;
+  }
+  .slogan-box {
+    display: inline-block;
+    padding: 10px 30px;
+    background-color: #FFC440; /* Solid yellow background */
+    border-radius: 8px;
+  }
+  
+  .slogan-box p {
+    font-size: 1.2rem;
+    color: #FFFFFF; /* White text for readability */
+    margin: 0;
+    font-weight: bold;
+  }
+  
+  
+  .services h2 {
+    font-size: 28px;
+    color: #E2330A; /* Red Text */
+  }
+  
+  .services ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .services li {
+    font-size: 18px;
+    color: #000000; /* Black Text */
+    padding: 5px 0;
+  }
+  
+  
+  body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+  }
+  
+  #whatsapp-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #25d366;
+    color: white;
+    border-radius: 50px;
+    padding: 10px 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  }
+  
+  #whatsapp-button a {
+    text-decoration: none;
+    color: white;
+    font-size: 14px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+  }
+  
+  #whatsapp-button img {
+    width: 20px;
+    height: 20px;
+  }
+  
+  #whatsapp-button:hover {
+    transform: scale(1.1);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+  }
+  
+  /* About Us Section */
+  .about-us {
+    display: flex;
+    padding: 40px;
+    background-color: #FFFFFF; /* White Background */
+  }
+  
+  .about-us img {
+    width: 50%;
+    height: auto;
+    object-fit: cover;
+  }
+  
+  .content {
+    padding-left: 20px;
+  }
+  
+  .content h2 {
+    font-size: 28px;
+    color: #E2330A; /* Red Text */
+  }
+  
+  .content p {
+    font-size: 18px;
+    color: #000000; /* Black Text */
+  }
+  
+  /* General Section Styles */
+  .form-section {
+    text-align: center;
+    margin: 20px 0;
+  }
+  
+  /* Button Container */
+  .button-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+  }
+  
+  /* General Button Styles */
+  .form-button {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 150px;
+    height: 150px;
+    padding: 10px;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  /* Button Icons */
+  .form-button i {
+    font-size: 48px;
+    margin-bottom: 10px;
+  }
+  
+  /* Hover Effects */
+  .form-button:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Button Styles */
+  .form-button.booking {
+    background-color: #fad439;
+    color: #084aa2;
+  }
+  .form-button.quote {
+    background-color: #084aa2;
+    color: #fad439;
+  }
+  .form-button.contact {
+    background-color: #c61212;
+    color: #fff;
+  }
+  
+  /* Layout for Desktop */
+  @media (min-width: 768px) {
+    .button-container {
+      justify-content: space-around;
+    }
+  }
+  
+  /* Responsive Layout for Mobile */
+  @media (max-width: 767px) {
+    .form-button {
+      width: 100%;
+      height: auto;
+      padding: 15px 0;
+      font-size: 18px;
+    }
+    .form-button i {
+      font-size: 36px;
+    }
+  }
+  
+  
+  /* Services Section */
+  .services {
+    padding: 50px 20px;
+    background-image: url("path-to-background-image.jpg");
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    color: #FFFFFF; /* White Text for visibility */
+  }
+  
+  .services h2 {
+    font-size: 32px;
+    color: #FFC440; /* Yellow Header */
+    margin-bottom: 20px;
+  }
+  
+  .services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+  }
+  
+  .service-box {
+    background-color: rgba(0, 0, 0, 0.7); /* Transparent black for contrast */
+    border-radius: 20px;
+    padding: 20px;
+    text-align: center;
+    color: #FFFFFF; /* White Text */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .service-box img {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 15px;
+  }
+  
+  .service-box h3 {
+    font-size: 22px;
+    color: #FFC440; /* Yellow Service Title */
+    margin-bottom: 10px;
+  }
+  
+  .service-box p {
+    font-size: 16px;
+    color: #FFFFFF; /* White Service Description */
+  }
+  
+  .service-box:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+  }
+  /* Q&A Section Styling */
+  .qa {
+    width: 80%;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #f9f9f9; /* Light gray background for the section */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Heading Styling */
+  .qa h2 {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #333;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  /* Styling for each question container */
+  .qa-item {
+    margin-bottom: 15px;
+    padding: 10px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  /* Styling for question buttons */
+  .qa-question {
+    width: 100%;
+    padding: 10px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: #333;
+    background-color: #fff;
+    border: none;
+    text-align: left;
+    cursor: pointer;
+    border-radius: 6px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  
+  /* Hover effect on question */
+  .qa-question:hover {
+    background-color: #1DB954; /* Green background on hover */
+    color: white; /* White text on hover */
+  }
+  
+  /* Styling for answer text */
+  .qa-answer {
+    font-size: 1rem;
+    color: #555;
+    line-height: 1.6;
+    opacity: 0; /* Hidden by default */
+    max-height: 0;
+    overflow: hidden;
+    padding: 0 10px;
+    transition: opacity 0.5s ease, max-height 0.5s ease;
+  }
+  
+  /* Active state for visible answer */
+  .qa-item.active .qa-answer {
+    opacity: 1;
+    max-height: 500px; /* Enough space for content to expand */
+    padding: 10px;
+  }
+  
+  /* Show the plus/minus icon on each question */
+  .qa-question::after {
+    content: " +";
+    font-size: 1.2rem;
+    color: #1DB954;
+    margin-left: 10px;
+    transition: transform 0.3s ease;
+  }
+  
+  /* Change icon to minus when the answer is visible */
+  .qa-item.active .qa-question::after {
+    content: " -";
+    transform: rotate(180deg); /* Flip the icon */
+  }
+  
+  
+  /* Video Section */
+  .video-section {
+    background-color: #FFC440; /* Yellow Background */
+    padding: 40px;
+    text-align: center;
+  }
+  
+  .video-section h2 {
+    font-size: 30px;
+    color: #000000; /* Black Text */
+  }
+  
+  .video-container iframe {
+    max-width: 100%;
+    height: 315px;
+    border: none;
+  }
+  
+  /* Contact Section */
+  .contact {
+    padding: 40px;
+    background-color: #FFFFFF; /* White Background */
+  }
+  
+  .contact h2 {
+    font-size: 30px;
+    color: #E2330A; /* Red Text */
+  }
+  
+  .contact p {
+    font-size: 18px;
+    color: #000000; /* Black Text */
+  }
+  
+  .contact a {
+    color: #E2330A; /* Red Links */
+    text-decoration: none;
+  }
+  
+  .contact a:hover {
+    color: #FFC440; /* Yellow Hover Effect */
+  }
+  
+  /* Style for the 'Visit Us' button */
+  .map-container {
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  .map-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #4CAF50; /* Green background */
+    color: white;
+    padding: 15px 32px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+    transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  }
+  
+  .map-button:hover {
+    background-color: #45a049; /* Darker green on hover */
+    transform: scale(1.05); /* Slight enlargement on hover */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Stronger shadow on hover */
+  }
+  
+  .map-button i {
+    margin-right: 10px; /* Space between the icon and text */
+    font-size: 20px; /* Icon size */
+  }
+  
+  /* Accreditation Section */
+  .accreditations {
+    padding: 20px;
+    background-color: #F4F4F4; /* Light Gray */
+    text-align: center;
+  }
+  
+  .accreditations h2 {
+    font-size: 28px;
+    color: #E2330A; /* Red Text */
+  }
+  
+  .accreditation-logos img {
+    width: 100px;
+    height: auto;
+    margin: 10px;
+  }
+  
+  /* Footer Styles */
+  footer {
+    background-color: #000000; /* Black Background */
+    color: #FFFFFF; /* White Text */
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .footer-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  
+  .footer-container .footer-contact,
+  .footer-container .footer-social,
+  .footer-container .footer-newsletter {
+    flex: 1;
+    margin: 10px;
+  }
+  
+  .footer-social a,
+  .footer-newsletter button {
+    background-color: #E2330A; /* Red Buttons */
+    color: #FFFFFF; /* White Text */
+    padding: 10px 20px;
+    text-decoration: none;
+    border: none;
+    border-radius: 5px;
+  }
+  
+  .footer-social a:hover,
+  .footer-newsletter button:hover {
+    background-color: #FFC440; /* Yellow Hover Effect */
+  }
+  
+  .footer-bottom p {
+    margin-top: 10px;
+    font-size: 14px;
+    color: #FFFFFF; /* White Text */
+  }
+  .whatsapp-icon:hover {
+    transform: scale(1.1);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+  }  
+    /* Global Styles */
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #FFFFFF;
+        color: #000000;
+      }
+  
+      /* Header Styles */
+      .header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 15px 20px;
+        background-color: #E2330A;
+        flex-wrap: wrap;
+      }
+  
+      .header-left {
+        display: flex;
+        align-items: center;
+      }
+  
+      .logo {
+        width: 40px;
+        height: auto;
+        margin-right: 10px;
+      }
+  
+      .company-name {
+        color: #FFFFFF;
+        font-size: 20px;
+        margin: 0;
+      }
+  
+      .header-right {
+        display: flex;
+        gap: 10px;
+      }
+  
+      .quick-links {
+        list-style: none;
+        display: flex;
+        gap: 10px;
+        padding: 0;
+        margin: 0;
+      }
+  
+      .quick-links li {
+        display: inline;
+      }
+  
+      .quick-links a {
+        color: #FFC440;
+        text-decoration: none;
+        font-size: 14px;
+      }
+  
+      /* Home Section */
+      .home {
+        width: 100%;
+        height: 300px;
+        overflow: hidden;
+        position: relative;
+      }
+  
+      .slider {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+      }
+  
+      .slide img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+  
+      /* Responsive Adjustments */
+      @media (max-width: 768px) {
+        .header {
+          flex-direction: column;
+          align-items: flex-start;
+        }
+  
+        .header-right {
+          flex-wrap: wrap;
+          gap: 5px;
+        }
+  
+        .home {
+          height: 200px;
+        }
+  
+        .slogan-section h2 {
+          font-size: 1.5rem;
+        }
+  
+        .slogan-box p {
+          font-size: 1rem;
+        }
+  
+        .about-us {
+          flex-direction: column;
+        }
+  
+        .about-us img {
+          width: 100%;
+        }
+  
+        .content {
+          padding: 10px;
+        }
+  
+        .services-grid {
+          grid-template-columns: 1fr;
+        }
+  
+        .qa h2 {
+          font-size: 1.5rem;
+        }
+  
+        .qa-question {
+          font-size: 1rem;
+        }
+  
+  /* Video Section */
+  .video-section {
+    background-color: #FFC440; /* Yellow Background */
+    padding: 40px;
+    text-align: center;
+  }
+  
+  .video-section h2 {
+    font-size: 30px;
+    color: #000000; /* Black Text */
+  }
+  
+  .video-container iframe {
+    max-width: 100%;
+    height: 315px;
+    border: none;
+  }
+  
+  /* Contact Section */
+  .contact {
+    padding: 40px;
+    background-color: #FFFFFF; /* White Background */
+  }
+  
+  .contact h2 {
+    font-size: 30px;
+    color: #E2330A; /* Red Text */
+  }
+  
+  .contact p {
+    font-size: 18px;
+    color: #000000; /* Black Text */
+  }
+  
+  .contact a {
+    color: #E2330A; /* Red Links */
+    text-decoration: none;
+  }
+  
+  .contact a:hover {
+    color: #FFC440; /* Yellow Hover Effect */
+  }
+  
+  /* Style for the 'Visit Us' button */
+  .map-container {
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  .map-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #4CAF50; /* Green background */
+    color: white;
+    padding: 15px 32px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+    transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  }
+  
+  .map-button:hover {
+    background-color: #45a049; /* Darker green on hover */
+    transform: scale(1.05); /* Slight enlargement on hover */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Stronger shadow on hover */
+  }
+  
+  .map-button i {
+    margin-right: 10px; /* Space between the icon and text */
+    font-size: 20px; /* Icon size */
+  }
+  
+  /* Accreditation Section */
+  .accreditations {
+    padding: 20px;
+    background-color: #F4F4F4; /* Light Gray */
+    text-align: center;
+  }
+  
+  .accreditations h2 {
+    font-size: 28px;
+    color: #E2330A; /* Red Text */
+  }
+  
+  .accreditation-logos img {
+    width: 100px;
+    height: auto;
+    margin: 10px;
+  }
+  
+  /* Footer Styles */
+  footer {
+    background-color: #000000; /* Black Background */
+    color: #FFFFFF; /* White Text */
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .footer-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  
+  .footer-container .footer-contact,
+  .footer-container .footer-social,
+  .footer-container .footer-newsletter {
+    flex: 1;
+    margin: 10px;
+  }
+  
+  .footer-social a,
+  .footer-newsletter button {
+    background-color: #E2330A; /* Red Buttons */
+    color: #FFFFFF; /* White Text */
+    padding: 10px 20px;
+    text-decoration: none;
+    border: none;
+    border-radius: 5px;
+  }
+  
+  .footer-social a:hover,
+  .footer-newsletter button:hover {
+    background-color: #FFC440; /* Yellow Hover Effect */
+  }
+  
+  .footer-bottom p {
+    margin-top: 10px;
+    font-size: 14px;
+    color: #FFFFFF; /* White Text */
+  }
+  .whatsapp-icon:hover {
+    transform: scale(1.1);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+  }  
+    /* Global Styles */
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #FFFFFF;
+        color: #000000;
+      }
+  
+      /* Header Styles */
+      .header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 15px 20px;
+        background-color: #E2330A;
+        flex-wrap: wrap;
+      }
+  
+      .header-left {
+        display: flex;
+        align-items: center;
+      }
+  
+      .logo {
+        width: 40px;
+        height: auto;
+        margin-right: 10px;
+      }
+  
+      .company-name {
+        color: #FFFFFF;
+        font-size: 20px;
+        margin: 0;
+      }
+  
+      .header-right {
+        display: flex;
+        gap: 10px;
+      }
+  
+      .quick-links {
+        list-style: none;
+        display: flex;
+        gap: 10px;
+        padding: 0;
+        margin: 0;
+      }
+  
+      .quick-links li {
+        display: inline;
+      }
+  
+      .quick-links a {
+        color: #FFC440;
+        text-decoration: none;
+        font-size: 14px;
+      }
+  
+      /* Home Section */
+      .home {
+        width: 100%;
+        height: 300px;
+        overflow: hidden;
+        position: relative;
+      }
+  
+      .slider {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+      }
+  
+      .slide img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+  
+      /* Responsive Adjustments */
+      @media (max-width: 768px) {
+        .header {
+          flex-direction: column;
+          align-items: flex-start;
+        }
+  
+        .header-right {
+          flex-wrap: wrap;
+          gap: 5px;
+        }
+  
+        .home {
+          height: 200px;
+        }
+  
+        .slogan-section h2 {
+          font-size: 1.5rem;
+        }
+  
+        .slogan-box p {
+          font-size: 1rem;
+        }
+  
+        .about-us {
+          flex-direction: column;
+        }
+  
+        .about-us img {
+          width: 100%;
+        }
+  
+        .content {
+          padding: 10px;
+        }
+  
+        .services-grid {
+          grid-template-columns: 1fr;
+        }
+  
+     /* General Styles */
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+    color: #333;
+  }
+  
+        .qa h2 {
+          font-size: 1.5rem;
+        }
+  
+        .qa-question {
+          font-size: 1rem;
+        }
+  
+        .video-section h2 {
+          font-size: 1.5rem;
+        }
+  
+        iframe {
+          height: 200px;
+        }
+      }
+  
+      @media (max-width: 480px) {
+        .header-right {
+          flex-direction: column;
+        }
+  
+        .quick-links {
+          flex-direction: column;
+          gap: 5px;
+        }
+  
+        .slogan-section {
+          padding: 10px;
+        }
+  
+        .slogan-section h2 {
+          font-size: 1.2rem;
+        }
+  
+        .slogan-box p {
+          font-size: 0.9rem;
+        }
+  
+        .service-box {
+          padding: 15px;
+        }
+  
+        iframe {
+          height: 180px;
+        }
+        
+  * Base Styles for Larger Screens (Default) */
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #FFFFFF;
+    color: #000000;
+  }
+  
+  /* Responsive Adjustments for Tablets */
+  @media (max-width: 1024px) {
+    .header {
+      flex-wrap: wrap;
+      padding: 15px;
+    }
+  
+    .header-right {
+      flex-wrap: wrap;
+      gap: 5px;
+    }
+  
+    .home {
+      height: 250px;
+    }
+  
+    .about-us {
+      flex-direction: column;
+    }
+  
+    .about-us img {
+      width: 100%;
+      height: auto;
+    }
+  
+    .content {
+      padding: 20px;
+    }
+  
+    .services-grid {
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    }
+  
+    .qa h2 {
+      font-size: 1.8rem;
+    }
+  
+    iframe {
+      height: 250px;
+    }
+  
+  /* Responsive Adjustments for Mobile Phones */
+  @media (max-width: 768px) {
+    .header {
+      flex-direction: column;
+      align-items: flex-start;
+      padding: 10px;
+    }
+  
+    .header-right {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 5px;
+    }
+  
+    .quick-links {
+      flex-direction: column;
+      gap: 10px;
+    }
+  
+    .home {
+      height: 200px;
+    }
+  
+    .slogan-section {
+      padding: 10px;
+    }
+  
+    .slogan-section h2 {
+      font-size: 1.5rem;
+    }
+  
+    .slogan-box p {
+      font-size: 1rem;
+    }
+  
+    .about-us img {
+      width: 100%;
+      height: auto;
+    }
+  
+    .services-grid {
+      grid-template-columns: 1fr;
+    }
+  
+    .service-box {
+      padding: 15px;
+    }
+  
+    iframe {
+      height: 200px;
+    }
+  }
+  
+  /* Responsive Adjustments for Smaller Mobile Devices */
+  @media (max-width: 480px) {
+    .header {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    .header-right {
+      flex-direction: column;
+      gap: 5px;
+    }
+  
+    .quick-links {
+      flex-direction: column;
+    }
+  
+    .slogan-section h2 {
+      font-size: 1.2rem;
+    }
+  
+    .slogan-box p {
+      font-size: 0.9rem;
+    }
+  
+    .services-grid {
+      grid-template-columns: 1fr;
+    }
+  
+    iframe {
+      height: 180px;
+    }
+    
+  /* Video Section */
+  .video-section {
+    background-color: #FFC440; /* Yellow Background */
+    padding: 40px;
+    text-align: center;
+    box-sizing: border-box; /* Ensure padding doesn't affect width */
+  }
+  
+  .video-section h2 {
+    font-size: 30px;
+    color: #000000; /* Black Text */
+    margin-bottom: 20px;
+  }
+  
+  .video-container {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    max-width: 560px; /* Limits width on larger screens */
+    height: auto;
+  }
+  
+  .video-container a {
+    display: block;
+    width: 100%;
+  }
+  
+  .video-container img {
+    width: 100%; /* Ensures image is responsive */
+    height: auto; /* Maintain aspect ratio */
+    border: none;
+  }
+  
+  /* Responsive Adjustments */
+  @media (max-width: 768px) {
+    .video-section h2 {
+      font-size: 24px; /* Slightly smaller font size on tablets */
+    }
+  
+    .video-container {
+      max-width: 100%; /* Allow image to fill available width */
+      padding: 0 10px; /* Add some padding on small screens */
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .video-section h2 {
+      font-size: 20px; /* Adjust font size for smaller screens */
+      margin-bottom: 15px;
+    }
+  
+    .video-container {
+      max-width: 100%; /* Full width on mobile */
+      padding: 0 5px; /* Reduce padding for smaller screens */
+    }
+  
+    .video-container img {
+      width: 100%; /* Ensure the image fills the width of the container */
+      height: auto;
+    }
+  
