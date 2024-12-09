@@ -594,55 +594,56 @@ body {
         color: #000000;
       }
   
-      /* Header Styles */
-      .header {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        padding: 15px 20px;
-        background-color: #E2330A;
-        flex-wrap: wrap;
-      }
-  
-      .header-left {
-        display: flex;
-        align-items: center;
-      }
-  
-      .logo {
-        width: 40px;
-        height: auto;
-        margin-right: 10px;
-      }
-  
-      .company-name {
-        color: #FFFFFF;
-        font-size: 20px;
-        margin: 0;
-      }
-  
-      .header-right {
-        display: flex;
-        gap: 10px;
-      }
-  
-      .quick-links {
-        list-style: none;
-        display: flex;
-        gap: 10px;
-        padding: 0;
-        margin: 0;
-      }
-  
-      .quick-links li {
-        display: inline;
-      }
-  
-      .quick-links a {
-        color: #FFC440;
-        text-decoration: none;
-        font-size: 14px;
-      }
+/* Header Styles */
+.header {
+  position: sticky; /* Makes the header sticky */
+  top: 0; /* Sticks the header to the top of the page */
+  z-index: 1000; /* Ensures the header stays on top of other elements */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: #E2330A; /* Red Background */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Optional: Adds subtle shadow */
+}
+
+.header-left {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  width: 50px;
+  height: auto;
+  margin-right: 15px;
+}
+
+.company-name {
+  color: #FFFFFF; /* White Text */
+  font-size: 24px;
+  margin: 0;
+}
+
+.quick-links {
+  list-style: none;
+  display: flex;
+  gap: 20px; /* Adds spacing between links */
+  margin: 0;
+  padding: 0;
+}
+
+.quick-links li a {
+  text-decoration: none;
+  color: #FFFFFF; /* White Links */
+  font-size: 16px;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+.quick-links li a:hover {
+  color: #FFD700; /* Optional: Gold color on hover */
+}
+
   
       /* Home Section */
       .home {
