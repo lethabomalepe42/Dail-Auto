@@ -489,6 +489,26 @@ body {
     color: #FFC440; /* Yellow Hover Effect */
   }
   
+  #work-hours {
+    background-color: #f4f4f4;
+    padding: 20px;
+    border-radius: 5px;
+    margin: 20px auto;
+    width: 80%;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  #work-hours h2 {
+    color: #ff6600;
+    margin-bottom: 10px;
+  }
+  
+  #work-hours p {
+    font-size: 1.1em;
+    color: #333;
+  }
+  
+
   /* Style for the 'Visit Us' button */
   .map-container {
     text-align: center;
